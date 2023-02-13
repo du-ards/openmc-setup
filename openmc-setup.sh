@@ -83,7 +83,9 @@ echo
 echo "*** Cloning into openmc-dev ***"
 echo
 cd $dir # just pwd 
-# mkdir openmc
+mkdir openmc
+# sudo chmod -R 1777 openmc
+chown saad589 openmc
 git clone https://github.com/openmc-dev/openmc.git
 if [ $? -eq 0 ]
 then
