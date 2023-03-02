@@ -30,7 +30,7 @@
 # Note that the cross-section tables are limited to the following six material temperatures:
 # 250 K, 293.6 K, 600 K, 900 K, 1200 K, and 2500 K. For additional cross-section table at different
 # temperature points (for example, neutronics-TH coupled analysis or neuclear thermal rocket
-# design), please use contact DU-ARDS.
+# design), please contact DU-ARDS for support.
 #
 # For instruction visit the release,
 # https://github.com/du-ards/openmc-setup
@@ -40,7 +40,7 @@
 #    symlink already exists; done 
 #    cmake server down; done 
 #    xs repo suffix; done 
-#    git privilege issue on win 22h2 wsl2;  
+#    git privilege issue on win 22h2 wsl2; workaround for now: install on ~ directory  
 #    set -e global exit on any error disabled;
 # 
 echo 
@@ -201,8 +201,8 @@ echo "*** OpenMC setup done! ***"
 echo 
 echo "*** Exiting DU-ARDS OpenMC setup script ***"
 echo
-echo "Please try the following commands: "
+echo "Please try the following two commands: "
 echo
-echo "echo $OPENMC_CROSS_SECTIONS"
-echo "openmc --version"
+echo "1. echo \$OPENMC_CROSS_SECTIONS"
+echo "2. openmc --version"
 
