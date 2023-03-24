@@ -45,7 +45,7 @@
 # 
 echo 
 echo "*** DU-ARDS OpenMC setup script ***"
-echo "Script version 0.0.2"
+echo "Script version 0.0.3"
 echo "Git SHA1: 67b0b484ebb74c2cb77253035733d6c840bec8aa"
 echo "Copyright (c) 2023; Saad Islam AMEI All rights reserved."
 echo "GNU/GPL license at <https://github.com/du-ards/openmc-setup/blob/main/LICENSE>"
@@ -162,7 +162,7 @@ echo
 echo "*** Installing the Python API and dependencies ***"
 sudo apt install python3-pip python3-dev
 sudo -H pip3 install --upgrade pip
-sudo pip install numpy vtk jupyter
+sudo pip install numpy vtk openmc-mesh-tally-to-vtk jupyter
 sudo pip install .
 cd $dir
 echo
